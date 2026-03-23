@@ -187,11 +187,22 @@
 </head>
 <body class="bg-background font-body text-on-background antialiased overflow-x-hidden">
 <header class="fixed top-0 w-full z-[100] bg-[#f7f9fb]/80 backdrop-blur-xl border-b border-[#505f76]/10 transition-all duration-300">
-<nav class="flex justify-between items-center w-full px-8 py-5 max-w-full">
+<nav class="flex flex-col w-full px-8 py-5 max-w-full">
+<!-- Mobile First Row -->
+<div class="flex justify-between items-center md:hidden">
 <div class="text-xl font-extrabold tracking-tighter text-[#001736] uppercase font-headline">
             Clinical Precision
         </div>
-<div class="hidden md:flex space-x-10 items-center">
+<button class="signature-gradient text-white px-8 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide transition-all active:opacity-80 hover:shadow-lg hover:-translate-y-0.5">
+            Book Appointment
+        </button>
+</div>
+<!-- Desktop Row -->
+<div class="hidden md:flex justify-between items-center">
+<div class="text-xl font-extrabold tracking-tighter text-[#001736] uppercase font-headline">
+            Clinical Precision
+        </div>
+<div class="flex space-x-10 items-center" id="desktop-nav">
 <a class="nav-item font-manrope font-bold tracking-tight text-[#001736] border-b-2 border-[#002b5c] pb-1 transition-colors" href="index.html">Home</a>
 <a class="nav-item font-manrope font-bold tracking-tight text-[#505f76] hover:text-[#001736] transition-colors" href="services.html">Services</a>
 <a class="nav-item font-manrope font-bold tracking-tight text-[#505f76] hover:text-[#001736] transition-colors" href="anout.html">About Us</a>
@@ -199,6 +210,13 @@
 <button class="signature-gradient text-white px-8 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide transition-all active:opacity-80 hover:shadow-lg hover:-translate-y-0.5">
             Book Appointment
         </button>
+</div>
+<!-- Mobile Second Row -->
+<div class="flex justify-center gap-10 md:hidden">
+<a class="nav-item font-manrope font-bold tracking-tight text-[#001736] border-b-2 border-[#002b5c] pb-1 transition-colors" href="index.html">Home</a>
+<a class="nav-item font-manrope font-bold tracking-tight text-[#505f76] hover:text-[#001736] transition-colors" href="services.html">Services</a>
+<a class="nav-item font-manrope font-bold tracking-tight text-[#505f76] hover:text-[#001736] transition-colors" href="anout.html">About Us</a>
+</div>
 </nav>
 </header>
 <main class="pt-0">

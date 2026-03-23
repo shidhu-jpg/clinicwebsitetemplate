@@ -178,21 +178,43 @@
 <div id="custom-cursor-dot"></div>
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-[100] glass-panel border-b border-surface-container">
-<div class="flex justify-between items-center w-full px-8 py-5 max-w-screen-2xl mx-auto">
+<div class="flex flex-col w-full px-8 py-5 max-w-screen-2xl mx-auto">
+<!-- Mobile First Row -->
+<div class="flex justify-between items-center md:hidden">
 <div class="text-xl font-extrabold tracking-tighter text-primary header-font flex items-center gap-2">
 <span class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs">CP</span>
             CLINICAL PRECISION
         </div>
-<div class="hidden md:flex items-center space-x-10">
+<div class="flex items-center gap-6">
+<button class="block bg-primary text-white px-7 py-2.5 rounded-full text-xs font-bold header-font uppercase tracking-widest hover:shadow-lg hover:shadow-primary/20 active:scale-95 transition-all">
+                Concierge Booking
+            </button>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+<!-- Desktop Row -->
+<div class="hidden md:flex justify-between items-center">
+<div class="text-xl font-extrabold tracking-tighter text-primary header-font flex items-center gap-2">
+<span class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-xs">CP</span>
+            CLINICAL PRECISION
+        </div>
+<div class="flex items-center space-x-10" id="desktop-nav">
 <a class="nav-item font-['Manrope'] font-semibold tracking-tight text-xs uppercase text-secondary hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="nav-item font-['Manrope'] font-semibold tracking-tight text-xs uppercase text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-primary" href="services.html">Services</a>
 <a class="nav-item font-['Manrope'] font-semibold tracking-tight text-xs uppercase text-secondary hover:text-primary transition-colors" href="anout.html">About Us</a>
 </div>
 <div class="flex items-center gap-6">
-<button class="hidden md:block bg-primary text-white px-7 py-2.5 rounded-full text-xs font-bold header-font uppercase tracking-widest hover:shadow-lg hover:shadow-primary/20 active:scale-95 transition-all">
+<button class="block bg-primary text-white px-7 py-2.5 rounded-full text-xs font-bold header-font uppercase tracking-widest hover:shadow-lg hover:shadow-primary/20 active:scale-95 transition-all">
                 Concierge Booking
             </button>
 <span class="material-symbols-outlined text-primary cursor-pointer hover:scale-110 transition-transform" data-icon="account_circle">account_circle</span>
+</div>
+</div>
+<!-- Mobile Second Row -->
+<div class="flex justify-center gap-10 md:hidden">
+<a class="nav-item font-['Manrope'] font-semibold tracking-tight text-xs uppercase text-secondary hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="nav-item font-['Manrope'] font-semibold tracking-tight text-xs uppercase text-primary relative after:content-[''] after:absolute after:-bottom-2 after:left-0 after:w-full after:h-0.5 after:bg-primary" href="services.html">Services</a>
+<a class="nav-item font-['Manrope'] font-semibold tracking-tight text-xs uppercase text-secondary hover:text-primary transition-colors" href="anout.html">About Us</a>
 </div>
 </div>
 </nav>
